@@ -5,14 +5,12 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: nmoreira <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/11/05 09:48:53 by nmoreira          #+#    #+#             */
-/*   Updated: 2022/11/05 09:49:38 by nmoreira         ###   ########.fr       */
+/*   Created: 2022/11/11 12:21:16 by nmoreira          #+#    #+#             */
+/*   Updated: 2022/11/11 12:21:26 by nmoreira         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-//#include "libft.h"
-//#include <ctype.h>
-//#include <stdio.h>
+#include "libft.h"
 
 int	ft_isalnum(int c)
 {
@@ -24,14 +22,3 @@ int	ft_isalnum(int c)
 		return (8);
 	return (0);
 }
-
-/* int main()
-{
-     int i = 0;
-     int i1 = 0;
-     char j = '6';
-     //char str[] = "12oL\n ";
-     i = ft_isalnum(j);
-     i1 = isalnum(j);
-     printf("%d, %d\n", i, i1);
-}*/

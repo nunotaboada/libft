@@ -5,14 +5,12 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: nmoreira <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/11/07 13:01:23 by nmoreira          #+#    #+#             */
-/*   Updated: 2022/11/07 13:08:01 by nmoreira         ###   ########.fr       */
+/*   Created: 2022/11/11 12:32:46 by nmoreira          #+#    #+#             */
+/*   Updated: 2022/11/11 12:32:52 by nmoreira         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-//#include <stdlib.h>
-//#include <stdio.h>
 
 static int	ft_lenght(int n)
 {
@@ -59,19 +57,3 @@ char	*ft_itoa(int n)
 	}
 	return (str);
 }
-
-/* 
-int main()
- {
-     char *i;
-     char *i1;
-     // int i1 = 0;
-     // int j = 4;
-     // char str[] = "    \n34512oL\n";
-     //char str[] = "-12345";
-     i = ft_itoa(-2147483647);
-     i1 = ft_itoa(0);
-     // i1 = atoi(str);
-     printf("%s", i);
-     printf("%s", i1);
- }*/

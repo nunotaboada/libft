@@ -11,9 +11,6 @@
 /* ************************************************************************** */
 
 #include "libft.h"
-//#include <stdlib.h>
-//#include <stdio.h>
-//#include <ctype.h>
 
 int	ft_tolower(int c)
 {
@@ -21,16 +18,3 @@ int	ft_tolower(int c)
 		c = c + 32;
 	return (c);
 }
-
-/*
-int main()
- {
-     int i = 0;
-     int i1 = 0;
-     int j = 3;
-     char str[] = "ABCdcfL\n";
-     i = ft_tolower(str[j]);
-     i1 = tolower(str[j]);
-     printf("%c, %c", i, i1);
- }
-*/

@@ -1,43 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstlast_bonus.c                                 :+:      :+:    :+:   */
+/*   ft_lstlast.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: nmoreira <nmoreira@student.42.fr>          +#+  +:+       +#+        */
+/*   By: nmoreira <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/11/06 12:24:09 by nmoreira          #+#    #+#             */
-/*   Updated: 2022/11/06 12:24:09 by nmoreira         ###   ########.fr       */
+/*   Created: 2022/11/11 12:53:11 by nmoreira          #+#    #+#             */
+/*   Updated: 2022/11/11 12:54:18 by nmoreira         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/*
-    DESCRIPTION :
-    The function ft_lstlast finds the last node in a given list.
-    RETURN VALUE :
-    The last node of a list.
-        [.]->[.]->[.]->[LAST]->[NULL]
-*/
-
 #include "libft.h"
-//#include <stdio.h>
-//#include <stdlib.h>
 
-/*typedef struct s_list
+t_list	*ft_lstlast(t_list *lst)
 {
-    void *content;
-    struct s_list *next;
-} t_list;*/
+	t_list	*tmp;
 
-t_list *ft_lstlast(t_list *lst)
-{
-    t_list *tmp;
-
-    tmp = lst;
-    if(!lst)
-        return (NULL);
-    while (tmp->next != NULL)
-    {
-        tmp = tmp->next;
-    }
-    return (tmp);
+	tmp = lst;
+	if (!lst)
+		return (NULL);
+	while (tmp->next != NULL)
+	{
+		tmp = tmp->next;
+	}
+	return (tmp);
 }

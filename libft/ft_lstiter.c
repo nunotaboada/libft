@@ -1,30 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstiter_bonus.c                                 :+:      :+:    :+:   */
+/*   ft_lstiter.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: nmoreira <nmoreira@student.42.fr>          +#+  +:+       +#+        */
+/*   By: nmoreira <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/11/07 04:34:54 by nmoreira          #+#    #+#             */
-/*   Updated: 2022/11/07 04:34:54 by nmoreira         ###   ########.fr       */
+/*   Created: 2022/11/11 12:50:12 by nmoreira          #+#    #+#             */
+/*   Updated: 2022/11/11 12:50:19 by nmoreira         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/*
-	DESCRIPTION :
-	The function ft_lstiter applies the function f passed as parameter
-	to the content of each node of a given list.
-	RETURN VALUE :
-	None.
-*/
-
 #include "libft.h"
-//#include <stdio.h>
-//#include <stdlib.h>
 
-void ft_lstiter(t_list *lst, void (*f)(void *))
+void	ft_lstiter(t_list *lst, void (*f)(void *))
 {
-    while (lst)
+	while (lst)
 	{
 		f(lst->content);
 		lst = lst->next;

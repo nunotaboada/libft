@@ -11,9 +11,6 @@
 /* ************************************************************************** */
 
 #include "libft.h"
-//#include <stdlib.h>
-//#include <stdio.h>
-//#include <unistd.h>
 
 void	ft_putnbr_fd(int n, int fd)
 {
@@ -38,11 +35,3 @@ void	ft_putnbr_fd(int n, int fd)
 		write(fd, &c, 1);
 	}
 }
-
-/*
-int main()
-{
-     ft_putnbr_fd(-2147483648, 1);
-     return 0;
-}
-*/

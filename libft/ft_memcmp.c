@@ -5,15 +5,12 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: nmoreira <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/11/07 11:50:21 by nmoreira          #+#    #+#             */
-/*   Updated: 2022/11/07 11:59:10 by nmoreira         ###   ########.fr       */
+/*   Created: 2022/11/11 13:13:29 by nmoreira          #+#    #+#             */
+/*   Updated: 2022/11/11 13:13:53 by nmoreira         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-// #include <stdlib.h>
-// #include <stdio.h>
-// #include <strings.h>
 
 int	ft_memcmp(const void *s1, const void *s2, size_t n)
 {
