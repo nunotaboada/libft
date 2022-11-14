@@ -1,4 +1,14 @@
-
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    Makefile                                           :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: nmoreira <marvin@42.fr>                    +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2022/11/12 11:46:49 by nmoreira          #+#    #+#              #
+#    Updated: 2022/11/12 11:47:28 by nmoreira         ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
 
 NAME = libft.a
 
@@ -24,9 +34,6 @@ CC = cc
 
 CFLAGS = -Wall -Wextra -Werror -I.
 
-#com automatização
-#CFLAGS = -Wall -Wextra -Werror $(foreach D,$(HEADER), -I$(D))
-
 AR = ar -rc
 
 RM = rm -rf
@@ -43,24 +50,17 @@ ${NAME}:${OBJS}
 	@echo "o to c"
 	${CC} ${CFLAGS} -c -o $@ $<
 
-bonus: ${OBJS} ${OBJS_B}
+bonus:$ ${OBJS} ${OBJS_B} 
 	${AR} ${NAME} $^
 	${LIB} ${NAME}
 
 clean:
-	@echo "cleaning"
 	${RM} ${OBJS} ${OBJS_B}
 
 fclean: clean
-	@echo "full clean"
 	${RM} ${NAME}
-	@echo "full cleaned"
 
 re: fclean all
-
-so:
-	$(CC) -nostartfiles -fPIC $(CFLAGS) $(FILES) $(BFILES)
-	gcc -nostartfiles -shared -o libft.so $(OBJS) $(OBJS_B)
 
 .PHONY: all clean fclean re bonus
 
