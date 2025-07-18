@@ -224,3 +224,7 @@ For `libftall`, use the corresponding Makefile to include the extended functions
 - **Email**: nunotaboada@gmail.com
 
 This project was completed as part of the 42 school curriculum
+
+<a href="https://www.42porto.com/pt/">
+ 	<img alt="Static Badge" src="https://img.shields.io/badge/_-Porto-_?style=for-the-badge&logo=42&labelColor=black&color=gray&link=https%3A%2F%2Fwww.42porto.com%2Fpt%2F">	
+</a>
